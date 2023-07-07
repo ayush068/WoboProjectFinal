@@ -1,0 +1,365 @@
+*
+{
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+	font-family: 'Nunito', sans-serif;
+	color:#3e3e40;
+    /* border : 1px solid red; */
+}
+
+/* header css */
+.aTag{
+	text-decoration: none;
+	color:#3E3E40;
+	font-size: larger;
+}
+p{
+    margin-bottom: 0px;
+}
+.navHeader{
+    padding: 0px 1rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.25);
+
+}
+.logoForWebsite{
+    width: 5rem;
+}
+input[type=search]
+{
+    background-color: #eaf3fb;
+    border-radius: 15px;
+    border: 1px solid #eaf3fb ;
+    width: 25rem;
+    font-size: 16px;
+    padding: 4px 2px 0px 4px;
+	outline: none;
+
+
+
+}
+.searchFild{
+    position:relative
+}
+.searchIcon{
+    background-color: #eaf3fb;
+    border:1px solid #3E3E40;
+    padding: 3px 8px 0px 8px;
+    position:absolute;
+    right:0px;
+    border-radius: 0px 15px 15px 0px;
+    cursor: pointer;
+}
+.searchIcon svg{
+    margin-bottom: 4px;
+}
+.rightSideOfNav{
+    display: flex;
+ justify-content: space-around;
+ align-items: center;
+gap:16px
+}
+.searchIconMobile{
+    display:none;
+padding: 0%;
+}
+.profileToggle{
+ border:none;
+}
+.iconInDropdown{
+    color:#2732C2;
+}
+
+.profileToggle:after{
+    content: none;
+   }
+.cartIcon{
+position: relative;
+}
+.numberOnCart{
+    position: absolute;
+    top:-6px;
+    right:-5px;
+    background-color: #2732C2;
+    color: #fff;
+    padding: 0px 4px;
+    border-radius: 50px;
+    font-size: 10px;
+    border:1px solid #fff;
+}
+
+/* Meadia Query for header */
+@media only screen and (max-width: 600px){
+    .searchIconMobile{
+        display:block;
+    }
+    .searchFild{
+        display:none
+    }
+    .becomeSeller{
+        display:none
+    }
+}
+/* header css end */
+
+/* category bar css start */
+.dropbtn:hover{
+    color: #2832c2;
+    cursor: pointer;
+   }
+   .dropbtn{
+   margin-bottom: 0;
+      }
+   .dropdown-item:hover{
+       background-color: #eaf3fb;
+   }
+   .menuDropDown {
+       display: none;
+       position: absolute;
+        left:-70px;
+      }
+      .menuDropDown h4 {
+    font-size: 16px;
+    }
+      .shadropdown{
+        position: absolute;
+        left:-250px;
+      }
+.pcdropdown{
+    position: absolute;
+    left:-550px;
+
+}
+.dropdown-menu li{
+    font-size: 16px;
+
+}
+     .dropdown:hover .dropdown-menu {
+       display: block;
+     }
+
+     @media only screen and (max-width: 768px){
+       .dropbtn{
+           font-size: 12px;
+         }
+         .menuDropDown {
+            display: none;
+            position: absolute;
+             left:-100px;
+           }
+           .pcdropdown{
+            position: absolute;
+            left:-550px;
+
+        }
+     }
+
+     /* for phone */
+     .offcanvas-body{
+        font-family: 'Nunito', sans-serif;
+        color:#3E3E40;
+     }
+     .imgCategory{
+        width: 40px;
+       }
+     .imgCategory img{
+        width: 100%;
+        object-fit: contain;
+     }
+     .categoryName{
+        font-size: 16px;
+        text-align: center;
+      cursor: pointer;
+     margin-bottom: 0px;
+     }
+     .categoryName:hover{
+        color:#2732C2
+     }
+      @media only screen and (max-width: 430px){
+        .categoryName{
+            font-size: 10px;
+            text-align: center;
+            width: 40px;
+         }
+      }
+/* category bar css end */
+
+/* add banner css start */
+.addBannerDiv{
+    width: 500px;
+    height: 200px;
+}
+.addBannerDiv img{
+    width: 100%;
+    height: 100%;
+}
+@media only screen and (max-width: 430px){
+    .addBannerDiv{
+        width: 300px;
+        height:100px;
+    }
+}
+/* add banner css end */
+
+.textBtwBanner{
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+
+}
+.categoryFix{
+    width:200px;
+    height: 200px;
+}
+.categoryFix img{
+    width:100%;
+    height:100%;
+    object-fit: contain;
+}
+.categoryRow{
+    background-color:#eaf3fb;
+}
+.categoryRow .item{
+    width: 150px;
+    height: 150px;
+
+}
+.categoryRow .item img{
+    width: 100%;
+    height: 100%;
+   object-fit: contain;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* footer css */
+.footer a{
+    color: #3E3E40;
+    text-decoration: none;
+}
+.footerATag
+{
+    font-size: 20px;
+}
+.footer
+{
+    color: #3E3E40;
+   box-shadow: inset 1px 1px 3px #3e3e40;
+
+}
+.f-main
+{
+    border-bottom: 1px solid #3e3e40;
+}
+.fm-icon
+{
+    font-size: 3rem;
+}
+.f-links
+{
+    padding: 0 2px;
+    align-items: center;
+    border-radius: 5px;
+    font-size: 15px;
+}
+.f-links a{
+    font-size: 15px;
+    font-weight: 700;
+}
+.f-icon{
+    color: #FFC700;
+}
+.fPayment-images
+{
+    width: 377px;
+    height: 17px;
+}
+.fPayment-images img{
+    width: 200%;
+}
+
+/* Meadia Query for Footer */
+@media only screen and (max-width: 600px){
+
+ /* Footer */
+.footer a{
+    color: #3E3E40;
+    text-decoration: none;
+}
+.footerATag
+{
+    font-size: 20px;
+}
+.footer
+{
+    color: #3E3E40;
+    border: 1px solid  #3E3E40;
+    position: sticky;
+}
+.fm-icon
+{
+    font-size: 3rem;
+}
+.f-links
+{
+    padding: 0 2px;
+    align-items: center;
+    border-radius: 5px;
+    font-size: 15px;
+}
+.f-links a{
+    font-size: 15px;
+    font-weight: 700;
+}
+.f-icon{
+    color: #FFC700;
+}
+.fPayment-images
+{
+    width: 377px;
+    height: 17px;
+}
+.fPayment-images img{
+    width: 200%;
+}
+
+    .f-sub
+    {
+        flex-direction: column;
+        gap: 2rem;
+        justify-content: center;
+        align-items: center;
+    }
+    .f-links
+    {
+        flex-direction: column;
+        gap: 1rem;
+        text-align: center;
+    }
+    .fPayment-images
+    {
+        width: 100%;
+    }
+    .fPayment-images img
+    {
+        width: 100%;
+    }
+}
